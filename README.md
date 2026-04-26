@@ -11,20 +11,23 @@ Analyzed retail sales data to:
 4. Detect seasonality patterns in monthly sales with time series analysis
 
 ## Tech Stack
-- **Language:** Python 3.10+
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
-- **Techniques:** Data Cleaning, GroupBy Aggregation, Data Visualization, EDA
+- Language: Python 
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn
+- Techniques: Data Cleaning, GroupBy Aggregation, Data Visualization, EDA
 
 ## Visualizations
 
 ### 1. Bar Chart - Category-wise Sales vs Profit
 Compares total sales and profit across main product categories to identify high-revenue vs high-margin segments.
+[Category Wise Sales and Profit](category_wise_sales_and_profit.png)
 
 ### 2. Scatter Plot - Discount vs Profit  
 Shows relationship between discount percentage and profit. Identifies if heavy discounts lead to losses.
+[Discount vs Profit](discount_vs_profit)
 
 ### 3. Line Chart - Monthly Sales Trend
 Displays seasonality patterns by plotting total sales across months. Helps with inventory planning.
+[Monthly Sales Trend](monthly_sales_trend.png)
 
 ## Data Processing Pipeline
 1. Data Loading: Import CSV using `pd.read_csv()`
@@ -36,10 +39,3 @@ Displays seasonality patterns by plotting total sales across months. Helps with 
 3. Data Analysis: Used `groupby()` + `agg()` to calculate KPIs by category and sub-category
 4. Data Visualization: Matplotlib used for bar, scatter, and line charts
 
-## How to Run
-1. Clone repository: `git clone https://github.com/yourusername/sales-profitability-analysis.git`
-2. Install dependencies: `pip install pandas matplotlib seaborn`
-3. Download dataset: [Superstore Sales Dataset - Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-4. Place `Sample - Superstore.csv` in project folder
-5. Run script: `python sales_analysis.py`
-6. Output: `cleaned_sales_data.csv` generated with cleaned dataset
